@@ -101,6 +101,7 @@ truffle init
 This will create some new files and directories, like a ```contracts``` directory, which
 contains a ```Migrations.sol``` file, which is an Ethereum smart contract.
 ![This is an image](/assets/images/pic3.png)
+This contract is responsible for publishing all our smart contracts to the blockchain.
 
 It also created a ```truffle-config.js``` file, which contains all the truffle configurations.
 ![This is an image](/assets/images/pic4.png)
