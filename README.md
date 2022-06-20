@@ -53,7 +53,7 @@ cd <your-react-name-you-just-created>
 ```
 3. Open your IDE (VS Code, or any other) inside this directory.
 You will see that react created a bunch of directories and files.
-<Insert pic1>
+![This is an image](/assets/images/pic1.png)
 
 4. To check if React opens correctly, open the Terminal 
 inside the React's directory and run:
@@ -62,7 +62,7 @@ npm run start
 ```
 This will start a local web server on port 3000, and a new window 
 will open in your browser with the React logo on it.
-<pic2>
+![This is an image](/assets/images/pic2.png)
 
 5. ```app.js``` (inside ```/src``` directory) is the file where we can manipulate
 the front end of the webpage. Like ```index.html``` .
@@ -100,12 +100,12 @@ truffle init
 ```
 This will create some new files and directories, like a ```contracts``` directory, which
 contains a ```Migrations.sol``` file, which is an Ethereum smart contract.
-<pic3>
+![This is an image](/assets/images/pic3.png)
 
 It also created a ```truffle-config.js``` file, which contains all the truffle configurations.
-
+![This is an image](/assets/images/pic4.png)
 To save you a lot of headache, copy my ```truffle-config.js``` and replace it with yours.
-<upload the file>
+
 
 It also created a ```test``` directory where we can run tests for the smart contracts.
 
@@ -117,7 +117,7 @@ as default.
 To config truffle for this, we must create a ```.babelrc``` file (always inside the working directory).
 
 So from IDE, create this file, or just download and import mine. (Don't forget to add a dot (.) before the file name.
-<upload file>
+
 
 ### Create a .env file.
 
