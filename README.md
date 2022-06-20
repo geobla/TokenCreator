@@ -91,7 +91,7 @@ and after.
 You should by now have a ```package-lock.json``` file created, which contains
 all the dependencies that node should run.
 
-### Create a truffle project.
+## Create a truffle project.
 
 1. Check that you are inside the React app directory and open Terminal there. 
 2. Run:
@@ -109,7 +109,7 @@ To save you a lot of headache, copy my ```truffle-config.js``` and replace it wi
 
 It also created a ```test``` directory where we can run tests for the smart contracts.
 
-### Use JavaScript ES6 as default with truffle.
+## Use JavaScript ES6 as default with truffle.
 
 Because of the need to use javascript async functions, we must config truffle to use ES6
 as default.
@@ -119,7 +119,7 @@ To config truffle for this, we must create a ```.babelrc``` file (always inside 
 So from IDE, create this file, or just download and import mine. (Don't forget to add a dot (.) before the file name.
 
 
-### Create a .env file.
+## Create a .env file.
 
 We will need a ```.env``` file to keep our credentials (like MetaMask login info, etc).
 
