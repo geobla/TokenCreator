@@ -116,7 +116,7 @@ as default.
 
 To config truffle for this, we must create a ```.babelrc``` file (always inside the working directory).
 
-So from IDE, create this file, or just download and import mine.
+So from IDE, create this file, or just download and import mine. (Don't forget to add a dot (.) before the file name.
 <upload file>
 
 ### Create a .env file.
