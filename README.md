@@ -335,7 +335,13 @@ token
 Now you will see a lot of info about the specific contract.
 ![This is an image](/assets/images/gif1.gif)  
 
+Once the `const` is working, we can use many commands to fetch info from our contract.
 
+For example if we run:
+```bash
+token.address
+```
+we get our token address.
 
 
 
