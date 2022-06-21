@@ -74,13 +74,82 @@ The dependencies that we are going to install will be added inside the
 
 So inside the React app directory run:
 ```bash
-npm i @truffle/hdwallet-provider apexcharts babel-polyfill 
-babel-preset-env babel-preset-es2015 babel-preset-stage-2 
-babel-preset-stage-3 babel-register bootstrap chai chai-as-promised 
-chai-bignumber dotenv lodash moment openzeppelin-solidity 
-react-apexcharts react-bootstrap react-redux redux redux-logger 
-reselect solidity-coverage truffle truffle-flattener truffle-hdwallet-provider-privkey 
-web3 
+npm i @truffle/hdwallet-provider 
+```
+```bash
+npm i apexcharts babel-polyfill 
+```
+```bash
+npm i babel-preset-env 
+```
+```bash
+npm i babel-preset-es2015 
+```
+```bash
+npm i babel-preset-stage-2 
+```
+```bash
+npm i babel-preset-stage-3 
+```
+```bash
+npm i babel-register 
+```
+```bash
+npm i bootstrap 
+```
+```bash
+npm i chai 
+```
+```bash
+npm i chai-as-promised 
+```
+```bash
+npm i chai-bignumber 
+```
+```bash
+npm i dotenv 
+```
+```bash
+npm i lodash 
+```
+```bash
+npm i moment 
+```
+```bash
+npm i openzeppelin-solidity 
+```  
+```bash
+npm i react-apexcharts 
+```
+```bash
+npm i react-bootstrap 
+```
+```bash
+npm i react-redux 
+```
+```bash
+npm i redux 
+```
+```bash
+npm i redux-logger 
+```
+```bash
+npm i reselect 
+```
+```bash
+npm i solidity-coverage
+```
+```bash
+npm i truffle
+```
+```bash
+npm i truffle-flattener
+```
+```bash
+npm i truffle-hdwallet-provider-privkey
+```
+```bash
+npm i web3
 ```
 This will install the latest versions of the above needed dependencies
 inside the ```node_modules``` directory.
