@@ -198,6 +198,105 @@ We will need a ```.env``` file to keep our credentials (like MetaMask login info
 Create one with your IDE and **DON'T FORGET** to add it, to the ```.gitignore``` file. 
 
 
+## Create your Token
+
+Inside the `./contracts/` directory we will create our Token smart contract, 
+next to the `Migrations.sol` contract.
+
+With the help of your IDE, create the `Token.sol` contract.
+
+1. First we create a very basic structure for the token contract, just to test that
+everything is working properly.
+
+Most of the code will be taken fom the [ethereum ERC20 standard.](https://github.com/ethereum/eips/issues/20)
+
+We can start with this code:
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
+
+contract Token {
+    string public name = "Harmonius";
+}
+```
+
+2. Once we are done with our basic code, we open the **Ganache** app and select **QuickStart**.
+
+Ganache provides us with a personal blockchain, with 10 free eth accounts, each funded with 100 ETH. 
+<PIC5>
+
+At the top (RPC SERVER), you can see that it provides us with the local **IP** and **PORT**. **(127.0.0.1:7545)** 
+This is the port that will connect us to its node.
+
+Those settings must be imported in the `truffle-config.js` file. But if you copied my folder, you have them already 
+configuerd.
+
+## Compile the `Token.sol` contract.
+
+In your terminal (always check that you are in the right directory) run:
+```bash
+truffle compile
+```
+Now if you check the `./src/abis/` directory you will see that 2 new json files are created, `Migrations.json`
+and `Token.json`.
+
+Those are the files that contain the **ABI** and **ByteCode** of the contracts we asked to compile.
+
+## Deploy the Token to the blockchain (Ganache for now).
+
+To deploy our token to the blockchain we need the **Migrations** script, which we already have.
+
+But it needs some changes, because now it has a generic code.
+
+The `migrations` contracts help us change the blockcain state.
+
+So whenever we create a new smart contract or whenever we make an exchange, we are actually
+changing its state.
+
+Don't confuse the `./src/contracts/Migrations.sol` file with the `/migrations/1_initial_migration.js` file.
+
+It is the second directory that we need now.
+
+They are **numbered** for a reason. Truffle needs to know in which **order to run** them.
+
+1. Inside the `migrations` directory, create a a js file named `2_deploy_contracts.js`.
+
+2. Copy the code from the `1_initial_migration.js` to the `2_deploy_contracts.js`.
+
+3. Wherever it says the word `Migrations` change it with the word `Token`. 
+
+Your code should now look like this:
+```javascript
+const Token = artifacts.require("Token");
+
+module.exports = function (deployer) {
+  deployer.deploy(Token);
+};
+``` 
+Doing this change, we are telling truffle to search for info, in the `./src/abis/Token.json/` file.
+
+4. Now in terminal run:
+```bash
+truffle migrate
+``` 
+In the terminal you will see that both js files where deployed, and a buch of info, like **transaction
+hash, gas used, total cost**, etc. <pic6>
+
+Also if we check the ganache app, we will see that the first address has less ETH now, because it was
+used for the transaction. <pic7>
+
+We can see that the block state has changed. We have 4 new blocks created. <pic8>  
+
+And we also have 4 transactions. <pic9>
+
+If you go inside one of them by selecting it, you get more info, like in etherscan.
+
+
+
+
+
+
+
 
 
 
