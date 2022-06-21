@@ -304,6 +304,39 @@ And we also have 4 transactions. ![This is an image](/assets/images/pic9.png)
 If you go inside one of them by selecting it, you get more info, like in etherscan.
 
 
+## Truffle console.
+
+You can acces the truffle console by running this command in terminal:
+```bash
+truffle console
+```
+You will see `truffle(development)>` is now showing up
+<pic10>
+
+This way you can interact with your contracts.
+
+If we want to fetch our Token smart contract that we just deployed we run:
+```bash
+const token = await Token.deployed(); 
+```
+- `Token` = name of `const` that we defined inside the `/migrations/2_deploy_contracts.js` file.
+- `deployed` = Fetches a deployed copy. 
+- `await` = (ES6 JS). Every time we fetch data from the blockchain it will be asynchronous. We have to wait for the result to come back.
+
+More info about async js, can be found in js promises lessons.
+
+Once you run the command you will see that it outputs `undefind`.
+
+Don't be scared. There is no error. Just run the `const` name we asigned to it. In our case:
+```bash
+token
+```
+Now you will see a lot of info about the specific contract.
+<gif1>  
+
+
+
+
 
 
 
