@@ -292,7 +292,10 @@ In the terminal you will see that both js files where deployed, and a buch of in
 hash, gas used, total cost**, etc. ![This is an image](/assets/images/pic6.png)
 
 Also if we check the ganache app, we will see that the first address has less ETH now, because it was
-used for the transaction. ![This is an image](/assets/images/pic7.png)
+used for the transaction. 
+![This is an image](/assets/images/pic7.png)
+
+Truffle always uses the first account to deploy contracts.
 
 We can see that the block state has changed. We have 4 new blocks created. ![This is an image](/assets/images/pic8.png)  
 
