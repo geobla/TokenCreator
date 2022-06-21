@@ -1,6 +1,15 @@
 # TokenCreator
 How to install truffle &amp; ganache on Linux and create a crypto token.
 
+## Table Of Contents
+1. [Dependencies](#dependencies)
+2. [Add dependencies for this project](#add-dependencies-for-this-project)
+3. [Create a Truffle Project](#create-a-truffle-project)
+4. [Use JavaScript ES6 as default with Truffle](#use-javascript-es6-as-default-with-truffle)
+5. [Create an .env file](#create-a-env-file)
+6. [Create your Token](#create-your-token)
+7. [Compile the Token.sol contract](#compile-the-tokensol-contract)
+8. [Deploy the Token to the BlockChain](#deploy-the-token-to-the-blockchain-ganache-for-now)
 
 ## Dependencies
 
