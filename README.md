@@ -172,6 +172,8 @@ contains a ```Migrations.sol``` file, which is an Ethereum smart contract.
 ![This is an image](/assets/images/pic3.png)
 This contract is responsible for publishing all our smart contracts to the blockchain.
 
+Move the `contracts` directory inside the `src` directory.
+
 It also created a ```truffle-config.js``` file, which contains all the truffle configurations.
 ![This is an image](/assets/images/pic4.png)
 To save you a lot of headache, copy my ```truffle-config.js``` and replace it with yours.
