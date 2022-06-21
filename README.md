@@ -311,7 +311,7 @@ You can acces the truffle console by running this command in terminal:
 truffle console
 ```
 You will see `truffle(development)>` is now showing up
-<pic10>
+![This is an image](/assets/images/pic10.png)
 
 This way you can interact with your contracts.
 
@@ -332,7 +332,7 @@ Don't be scared. There is no error. Just run the `const` name we asigned to it. 
 token
 ```
 Now you will see a lot of info about the specific contract.
-<gif1>  
+![This is an image](/assets/images/gif1.gif)  
 
 
 
