@@ -10,6 +10,7 @@ How to install truffle &amp; ganache on Linux and create a crypto token.
 6. [Create your Token](#create-your-token)
 7. [Compile the Token.sol contract](#compile-the-tokensol-contract)
 8. [Deploy the Token to the BlockChain](#deploy-the-token-to-the-blockchain-ganache-for-now)
+9. [Truffle Console](#truffle-console)
 
 ## Dependencies
 
