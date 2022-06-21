@@ -232,7 +232,7 @@ contract Token {
 2. Once we are done with our basic code, we open the **Ganache** app and select **QuickStart**.
 
 Ganache provides us with a personal blockchain, with 10 free eth accounts, each funded with 100 ETH. 
-<PIC5>
+![This is an image](/assets/images/pic5.png)
 
 At the top (RPC SERVER), you can see that it provides us with the local **IP** and **PORT**. **(127.0.0.1:7545)** 
 This is the port that will connect us to its node.
@@ -289,14 +289,14 @@ Doing this change, we are telling truffle to search for info, in the `./src/abis
 truffle migrate
 ``` 
 In the terminal you will see that both js files where deployed, and a buch of info, like **transaction
-hash, gas used, total cost**, etc. <pic6>
+hash, gas used, total cost**, etc. ![This is an image](/assets/images/pic6.png)
 
 Also if we check the ganache app, we will see that the first address has less ETH now, because it was
-used for the transaction. <pic7>
+used for the transaction. ![This is an image](/assets/images/pic7.png)
 
-We can see that the block state has changed. We have 4 new blocks created. <pic8>  
+We can see that the block state has changed. We have 4 new blocks created. ![This is an image](/assets/images/pic8.png)  
 
-And we also have 4 transactions. <pic9>
+And we also have 4 transactions. ![This is an image](/assets/images/pic9.png)
 
 If you go inside one of them by selecting it, you get more info, like in etherscan.
 
